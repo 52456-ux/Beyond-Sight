@@ -1,0 +1,204 @@
+/* ОСНОВА */
+body {
+    margin: 0; /* убирает отступ */
+    font-family: Arial; /* шрифт */
+    background: #f2f2f2; /* фон */
+    color: #333; /* цвет текста */
+}
+
+.container {
+    width: 90%; /* ширина */
+    margin: auto; /* центрирует */
+}
+
+.header {
+    background: #222; /* цвет шапки */
+    padding: 20px; /* отступ */
+}
+
+.logo {
+    color: white; /* цвет текста */
+    font-size: 24px; /* размер текста */
+}
+
+.nav-links {
+    display: flex; /* ссылки в ряд */
+    gap: 25px; /* расстояние */
+    list-style: none; /* убирает точки */
+    padding: 0; /* убирает отступ */
+}
+
+.nav-links a {
+    color: white; /* цвет ссылки */
+    text-decoration: none; /* убирает линию */
+}
+
+.hero {
+    background: #ddd; /* фон */
+    text-align: center; /* текст по центру */
+    padding: 40px; /* отступ */
+}
+
+.layout {
+    display: flex; /* блоки в ряд */
+    gap: 25px; /* расстояние */
+    margin-top: 25px; /* отступ сверху */
+}
+
+.posts {
+    width: 70%; /* ширина */
+}
+
+.sidebar {
+    width: 30%; /* ширина */
+}
+
+.post-card, 
+.widget,
+.article,
+.author-card {
+    background: white; /* белый фон */
+    padding: 20px; /* отступ */
+    margin-bottom: 20px; /* отступ снизу */
+}
+
+.post-card img,
+.article img {
+    width: 100%; /* ширина картинки */
+}
+
+.btn {
+    display: inline-block; /* делает блоком */
+    padding: 10px; /* отступ */
+    background: #333; /* фон кнопки */
+    color: white; /* цвет текста */
+    text-decoration: none; /* убирает линию */
+}
+
+.footer {
+    background: #222; /* цвет подвала */
+    color: white; /* цвет текста */
+    padding: 30px; /* отступ */
+    margin-top: 30px; /* отступ сверху */
+}
+
+/* СМЕНА РАЗМЕРА */
+@media (max-width: 600px) {
+    .resource-form { 
+        grid-template-columns: 1fr; 
+    }
+    .resource-form button { 
+        grid-column: auto; 
+    }
+    .nav-links { 
+        flex-wrap: wrap; 
+    }
+    .layout {
+        display: block; /* блоки друг под другом */
+    }
+
+    .posts,
+    .sidebar {
+        width: 100%; /* полная ширина */
+    }
+}
+
+/* ФОРМЫ И JS */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo { 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+.nav-links a.active { 
+    font-weight: bold; 
+    text-decoration: underline; 
+}
+.form-card, .resource-card {
+    background: white;
+    padding: 22px;
+    margin: 25px auto;
+    max-width: 720px;
+    border: 1px solid #ddd;
+}
+.form-card label { 
+    display: block; 
+    margin-top: 14px; 
+    font-weight: bold; 
+}
+.form-card input, 
+.form-card select, 
+.resource-form input, 
+.resource-form select {
+    display: block; 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px;
+    border: 1px solid #bbb; 
+    box-sizing: border-box;
+}
+.form-card input[type="checkbox"] { 
+    display: inline; 
+    width: auto; 
+}
+.form-card button, 
+.resource-form button { 
+    margin-top: 16px; 
+    padding: 10px 16px; 
+    cursor: pointer; 
+}
+.field-error { 
+    color: #a52222; 
+    font-size: 14px; 
+    margin: 3px 0; 
+    min-height: 18px; 
+}
+.message { 
+    padding: 12px; 
+    margin-top: 15px; 
+    background: #e8f1e8; 
+}
+.resource-form { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 12px; 
+}
+.resource-form button { 
+    grid-column: 1 / -1;
+ }
+.resource-tools { 
+    margin: 18px 0; 
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+}
+.resource-tools input, 
+.resource-tools select { 
+    padding: 10px; 
+}
+.resource-list { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 15px; 
+}
+.resource-item { 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    background: #fff; 
+}
+.resource-item h3 { 
+    margin-top: 0; 
+}
+.resource-item button { 
+    margin: 5px 5px 0 0; 
+    padding: 7px 10px; 
+}
+.status-label { 
+    font-weight: bold; 
+    color: #245840; 
+}
+
