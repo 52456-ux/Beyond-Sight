@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Beyond Sight</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Beyond Sight</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="post1.html">Articles</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="register.html">Reg</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome back</h1>
+      <p>Sign in to access your account and continue your journey with Beyond Sight.</p>
+    </div>
+  </section>
+  <main class="container">
+    <form id="login-form" class="form-card" novalidate>
+      <label for="login-email">Email</label>
+      <input id="login-email" type="email" autocomplete="email">
+      <p class="field-error" id="login-email-error"></p>
+
+      <label for="login-password">Password</label>
+      <input id="login-password" type="password" autocomplete="current-password">
+      <p class="field-error" id="login-password-error"></p>
+
+      <button type="submit" class="btn">Login</button>
+      <p id="login-message" class="message" aria-live="polite" hidden></p>
+      <p>New here? <a href="register.html">Create an account</a>.</p>
+      <p class="small">Why are reading this? Just go to the <a href="index.html">home page</a>.</p>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>Beyond Sight — a blog about low vision and accessibility.</p>
+    </div>
+  </footer>
+  <script src="login.js"></script>
+</body>
+</html>

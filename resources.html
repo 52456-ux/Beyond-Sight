@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility Resources — Beyond Sight</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html">Beyond Sight</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="post1.html">Articles</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="register.html">Reg</a></li>
+      </ul>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h1>Accessibility Resources</h1>
+      <p>Simple tools and ideas that can make reading easier</p>
+    </div>
+  </section>
+  <main class="container">
+    <section class="resource-card">
+      <h2>Add a resource</h2>
+      <form id="resource-form" class="resource-form">
+        <input id="resource-title" type="text" placeholder="Resource name" aria-label="Resource name" required>
+        <select id="resource-category" aria-label="Category" required>
+          <option value="">Choose category</option>
+          <option>Phone and computer</option>
+          <option>Display</option>
+          <option>Everyday tips</option>
+        </select>
+        <input id="resource-description" type="text" placeholder="Short description" aria-label="Short description" required>
+        <select id="resource-status" aria-label="Status">
+          <option>Useful</option>
+          <option>Try it</option>
+        </select>
+        <button type="submit" class="btn">Add resource</button>
+      </form>
+      <p id="resource-message" class="message" aria-live="polite"></p>
+      <div class="resource-tools">
+        <input id="resource-search" type="search" placeholder="Search resources" aria-label="Search resources">
+        <select id="resource-filter" aria-label="Filter by status">
+          <option value="All">All statuses</option>
+          <option value="Useful">Useful</option>
+          <option value="Try it">Try it</option>
+        </select>
+      </div>
+      <div id="resource-list" class="resource-list"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>Beyond Sight — a blog about low vision and accessibility.</p>
+    </div>
+  </footer>
+  <script src="resources.js"></script>
+</body>
+</html>
