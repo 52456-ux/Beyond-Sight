@@ -1,0 +1,143 @@
+body {
+  background-color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #0f172a;
+}
+
+.page-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin-bottom: 2rem;
+  border: 1px solid #e5e7eb;
+}
+
+.header h1 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 2rem;
+}
+
+.header p {
+  margin: 0.5rem 0 0 0;
+  color: #64748b;
+}
+
+.section-title {
+  color: #0f172a;
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.resource-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.resource-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #0f172a;
+  font-size: 1.15rem;
+}
+
+.resource-card p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.badge {
+  background-color: #eff6ff;
+  color: #2563eb;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  border: 1px solid #bfdbfe;
+  white-space: nowrap;
+}
+
+.login-form {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.75rem;
+  margin-top: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.login-form h2 {
+  margin: 0 0 1.25rem 0;
+  color: #1e293b;
+  font-size: 1.25rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  color: #475569;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.input-group input {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.status-message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
