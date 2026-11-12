@@ -1,0 +1,6 @@
+const items = [
+  { id: 1, title: 'Screen Magnifier', category: 'Phone and computer', description: 'Makes text and small details larger on a screen.', status: 'Useful' },
+  { id: 2, title: 'Screen Reader', category: 'Phone and computer', description: 'Reads text and interface elements aloud.', status: 'Useful' },
+  { id: 3, title: 'High Contrast', category: 'Display', description: 'Uses stronger contrast to make content easier to see.', status: 'Try it' },
+];
+module.exports = { items };
